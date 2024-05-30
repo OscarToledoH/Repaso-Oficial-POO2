@@ -1,0 +1,32 @@
+@{
+    ViewData["Title"] = "Nuevos Alumnos";
+}
+
+<div class="text-center">
+    <h1>Nuevo Alumno</h1>
+</div>
+<br><br>
+
+<form asp-controller="" asp-action="">
+    <label for="nombre" class="from-label">Nombre</label>
+    <input type="text" class="form-control" placeholder="Escribir Alumno">
+    <br>
+
+     <label for="nombre" class="from-label">Edad</label>
+    <input type="number" class="form-control" placeholder="Escribir Edad">
+    <br>
+
+     <label for="nombre" class="from-label">Carrera</label>
+    <input type="text" class="form-control" placeholder="Carrera Egresado">
+    <br>
+
+     <label for="nombre" class="from-label">Telefono</label>
+    <input type="number" class="form-control" placeholder="Telefono Personal">
+    <br>
+
+</form>
+
+<div class="text-center">
+    <a asp-controller="Maestros" asp-action="MaestrosSave" class="btn btn-primary mb-3">Guardar</a>
+    <a asp-controller="Maestros" asp-action="Maestroslist" class="btn btn-danger mb-3" >Cancelar</a>
+</div>

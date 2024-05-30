@@ -1,0 +1,19 @@
+@{
+    ViewData ["Title"] = "Nueva Carrera";
+}
+
+<h1 class="text-center" >Nueva Carrera</h1>
+
+<form asp-controller="Carreras" asp-action="CarrerasSave">
+    <label for="nombre" class="from-label">Nombre</label>
+    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre de la Carrera">
+    <br>
+
+    <label for="nombre" class="from-label">Tetramestres</label>
+    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Numero de Tetras">
+    <br>
+
+    <button class="btn btn-primary mb-3">Guardar</button>
+    
+    <button asp-controller="Home"  asp-action="Carreraslist" class="btn btn-danger mb-3">Cancelar</button>
+</form>
